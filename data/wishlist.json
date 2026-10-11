@@ -1,0 +1,50 @@
+{
+  "title": "Alisyn's Wishlist",
+  "notice": "Hi fam! This list is shared with a few of you, so please check with the others before buying anything so nobody doubles up.",
+  "items": [
+    {
+      "id": "nida-skincare",
+      "url": "https://nida.co/collections/shop/products/skincare-set-10-us",
+      "name": "NIDA Mega Deal Skincare Set of 10 (US)",
+      "price": 100.0,
+      "priority": "love",
+      "notes": "",
+      "image": "images/nida-skincare.jpg",
+      "added": "2026-10-10T12:00:00.000Z",
+      "previewFetched": true
+    },
+    {
+      "id": "one-eyed-cat",
+      "url": "https://www.etsy.com/listing/892026131/one-eyed-cat-ornament-custom-cat",
+      "name": "One Eyed Cat Ornament",
+      "price": null,
+      "priority": "love",
+      "notes": "",
+      "image": "images/one-eyed-cat.jpg",
+      "added": "2026-10-10T12:01:00.000Z",
+      "previewFetched": true
+    },
+    {
+      "id": "agatha-sticker",
+      "url": "https://www.etsy.com/listing/1822866707/agatha-all-along-coven-sticker-witches",
+      "name": "Agatha All Along Coven Sticker",
+      "price": null,
+      "priority": "love",
+      "notes": "",
+      "image": "images/agatha-sticker.jpg",
+      "added": "2026-10-10T12:02:00.000Z",
+      "previewFetched": true
+    },
+    {
+      "id": "lego-succulents",
+      "url": "https://www.amazon.com/dp/B09Q4GWMZQ",
+      "name": "LEGO Botanicals Succulents 10309",
+      "price": 34.99,
+      "priority": "love",
+      "notes": "",
+      "image": "images/lego-succulents.jpg",
+      "added": "2026-10-10T12:03:00.000Z",
+      "previewFetched": true
+    }
+  ]
+}

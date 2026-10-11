@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wishlist</title>
+  <meta name="description" content="Things I'd love.">
+  <script>
+    // Apply the saved theme before the page draws, so it doesn't flash.
+    try { const t = localStorage.getItem('wishlist-theme'); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="title">Wishlist</h1>
+    <button id="theme-toggle" class="icon-button" type="button" aria-label="Switch light/dark mode">
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+    </button>
+  </header>
+
+  <main>
+    <p id="notice" class="notice" hidden></p>
+
+    <div id="admin-bar" class="admin-bar" hidden>
+      <button id="add-item" class="button primary" type="button">+ Add item</button>
+      <button id="edit-settings" class="button" type="button">Edit title &amp; note</button>
+    </div>
+
+    <div class="toolbar">
+      <p id="count" class="count"></p>
+      <label class="sort">
+        Sort by
+        <select id="sort">
+          <option value="priority">Priority</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="newest">Newest</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="list"></div>
+  </main>
+
+  <footer class="site-footer">
+    <button id="owner-link" class="link-button" type="button">Owner sign-in</button>
+  </footer>
+
+  <!-- Sign in -->
+  <dialog id="signin-dialog">
+    <form method="dialog" id="signin-form">
+      <h2>Sign in to edit</h2>
+      <p class="help">Paste a GitHub access token that can edit the <code id="repo-name"></code> repo. It's saved only in this browser.</p>
+      <details class="help">
+        <summary>How do I get one?</summary>
+        <ol>
+          <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub's new token page</a>.</li>
+          <li>Give it a name like "wishlist" and pick an expiration.</li>
+          <li>Under <b>Repository access</b>, choose <b>Only select repositories</b> and pick <b>wishlist</b>.</li>
+          <li>Under <b>Permissions → Repository permissions</b>, set <b>Contents</b> to <b>Read and write</b>.</li>
+          <li>Click <b>Generate token</b>, copy it, and paste it here.</li>
+        </ol>
+      </details>
+      <label class="field">
+        <span>Access token</span>
+        <input id="token-input" type="password" autocomplete="off" spellcheck="false" required>
+      </label>
+      <p id="signin-error" class="error" hidden></p>
+      <div class="dialog-actions">
+        <button class="button" type="button" data-close>Cancel</button>
+        <button class="button primary" type="submit">Sign in</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Add / edit item -->
+  <dialog id="item-dialog">
+    <form method="dialog" id="item-form">
+      <h2 id="item-dialog-title">Add item</h2>
+      <label class="field">
+        <span>Link</span>
+        <input name="url" type="url" placeholder="https://…" required>
+      </label>
+      <div id="lookup" class="lookup" hidden>
+        <img id="lookup-image" alt="">
+        <p id="lookup-status"></p>
+      </div>
+      <label class="field">
+        <span>Name <small>(leave blank to use the item's own title)</small></span>
+        <input name="name" type="text">
+      </label>
+      <label class="field">
+        <span>Price <small>(USD)</small></span>
+        <input name="price" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0.00">
+      </label>
+      <fieldset class="field">
+        <legend>Priority</legend>
+        <div class="priority-picker">
+          <label><input type="radio" name="priority" value="omg"><span class="badge p-omg">OMG PLEASE</span></label>
+          <label><input type="radio" name="priority" value="love" checked><span class="badge p-love">love</span></label>
+          <label><input type="radio" name="priority" value="nice"><span class="badge p-nice">nice to have</span></label>
+        </div>
+      </fieldset>
+      <label class="field">
+        <span>Notes <small>(size, color, etc.)</small></span>
+        <textarea name="notes" rows="3"></textarea>
+      </label>
+      <details class="field">
+        <summary>Use a different picture</summary>
+        <label class="field">
+          <span>Image link</span>
+          <input name="image" type="text" placeholder="https://…/picture.jpg">
+        </label>
+      </details>
+      <p id="item-error" class="error" hidden></p>
+      <div class="dialog-actions">
+        <button id="delete-item" class="button danger" type="button" hidden>Delete</button>
+        <span class="spacer"></span>
+        <button class="button" type="button" data-close>Cancel</button>
+        <button class="button primary" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <!-- Title & note -->
+  <dialog id="settings-dialog">
+    <form method="dialog" id="settings-form">
+      <h2>Title &amp; note</h2>
+      <label class="field">
+        <span>Page title</span>
+        <input name="title" type="text" required>
+      </label>
+      <label class="field">
+        <span>Note at the top <small>(leave blank to hide it)</small></span>
+        <textarea name="notice" rows="3"></textarea>
+      </label>
+      <p id="settings-error" class="error" hidden></p>
+      <div class="dialog-actions">
+        <button id="sign-out" class="button" type="button">Sign out</button>
+        <span class="spacer"></span>
+        <button class="button" type="button" data-close>Cancel</button>
+        <button class="button primary" type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

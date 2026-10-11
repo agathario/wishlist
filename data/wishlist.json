@@ -1,12 +1,12 @@
 {
-  "title": "Alisyn's Wishlist",
-  "notice": "Hi fam! This list is shared with a few of you, so please check with the others before buying anything so nobody doubles up.",
+  "title": "alisyn's wishlist",
+  "notice": "Oh hai. I got annoyed at not being able to have a single place to put links to things.  So I made one. :)",
   "items": [
     {
       "id": "nida-skincare",
       "url": "https://nida.co/collections/shop/products/skincare-set-10-us",
       "name": "NIDA Mega Deal Skincare Set of 10 (US)",
-      "price": 100.0,
+      "price": 100,
       "priority": "love",
       "notes": "",
       "image": "images/nida-skincare.jpg",

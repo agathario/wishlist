@@ -196,6 +196,9 @@ async function save(change, message) {
       toast('Saved! The live site will update in a minute or two.');
       return;
     }
+    if (res.status === 403 || res.status === 404) {
+      throw new Error("Your token isn't allowed to change the wishlist. On GitHub, edit the token and set Contents to \"Read and write\" for the wishlist repo.");
+    }
     if (res.status !== 409 && res.status !== 422) {
       throw new Error(`GitHub wouldn't save the change (${res.status}).`);
     }

@@ -91,7 +91,7 @@
       "id": "mvjutongfj62",
       "url": "https://nida.co/collections/shop/products/skincare-set-7-c",
       "name": "NIDA Super Deal Skincare Set of 7",
-      "price": 70.0,
+      "price": 70,
       "priority": "love",
       "notes": "",
       "image": "images/mvjutongfj62.jpg",
@@ -99,6 +99,18 @@
       "added": "2026-10-22T18:08:13.324Z",
       "previewFetched": true,
       "imageSource": "https://nida.co/cdn/shop/files/nidasuperdeal7_AHABHA_01_b8edf9c8-82fb-466c-9e02-e2db97690fd5.jpg?v=1791885235"
+    },
+    {
+      "id": "mvjuvy10rm4h",
+      "url": "https://www.redbubble.com/i/sticker/Agathario-two-cards-collide-by-Jordand23/166190400/7sgk",
+      "name": "",
+      "price": null,
+      "priority": "love",
+      "notes": "small, holographic",
+      "image": "",
+      "customImage": false,
+      "added": "2026-10-22T18:09:58.788Z",
+      "previewFetched": false
     }
   ]
 }

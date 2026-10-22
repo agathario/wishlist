@@ -62,14 +62,15 @@
     {
       "id": "mvjujs10mqil",
       "url": "https://www.amazon.com/dp/B0GR8STFC2",
-      "name": "",
-      "price": null,
+      "name": "Succulent Skull Planter Flower Building Set Gothic Botanical Gift",
+      "price": 69.99,
       "priority": "love",
       "notes": "",
-      "image": "",
+      "image": "images/mvjujs10mqil.jpg",
       "customImage": false,
       "added": "2026-10-22T18:00:31.140Z",
-      "previewFetched": false
+      "previewFetched": true,
+      "imageSource": "https://m.media-amazon.com/images/I/71rQmBLqW-L._AC_SL1500_.jpg"
     }
   ]
 }

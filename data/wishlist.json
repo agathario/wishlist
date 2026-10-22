@@ -5,14 +5,15 @@
     {
       "id": "nida-skincare",
       "url": "https://nida.co/collections/shop/products/skincare-set-7-c",
-      "name": "",
-      "price": null,
+      "name": "NIDA Super Deal Skincare Set of 7",
+      "price": 70.0,
       "priority": "love",
       "notes": "",
-      "image": "",
+      "image": "images/nida-skincare.jpg",
       "added": "2026-10-10T12:00:00.000Z",
-      "previewFetched": false,
-      "customImage": false
+      "previewFetched": true,
+      "customImage": false,
+      "imageSource": "https://nida.co/cdn/shop/files/nidasuperdeal7_AHABHA_01_b8edf9c8-82fb-466c-9e02-e2db97690fd5.jpg?v=1791885235"
     },
     {
       "id": "one-eyed-cat",

@@ -90,14 +90,15 @@
     {
       "id": "mvjunsusqovt",
       "url": "https://www.etsy.com/listing/1856855659/healing-water-incantation-sticker",
-      "name": "",
+      "name": "Healing Water Incantation Sticker",
       "price": null,
       "priority": "love",
       "notes": "",
-      "image": "",
+      "image": "images/mvjunsusqovt.jpg",
       "customImage": false,
       "added": "2026-10-22T18:03:38.836Z",
-      "previewFetched": false
+      "previewFetched": true,
+      "imageSource": "https://i.etsystatic.com/43527845/r/il/1da308/6559415092/il_1080xN.6559415092_jw13.jpg"
     }
   ]
 }

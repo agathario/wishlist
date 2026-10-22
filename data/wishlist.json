@@ -77,14 +77,15 @@
     {
       "id": "mvjulpb6dl0f",
       "url": "https://www.amazon.com/dp/B08KGTKW53",
-      "name": "",
-      "price": null,
+      "name": "POP Funko Marvel: WandaVision - Agatha Harkness",
+      "price": 19.0,
       "priority": "love",
       "notes": "",
-      "image": "",
+      "image": "images/mvjulpb6dl0f.jpg",
       "customImage": false,
       "added": "2026-10-22T18:02:00.930Z",
-      "previewFetched": false
+      "previewFetched": true,
+      "imageSource": "https://m.media-amazon.com/images/I/71CV9curM5L._AC_SL1500_.jpg"
     }
   ]
 }

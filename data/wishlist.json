@@ -45,6 +45,18 @@
       "image": "images/lego-succulents.jpg",
       "added": "2026-10-10T12:03:00.000Z",
       "previewFetched": true
+    },
+    {
+      "id": "mvjuj107fe2i",
+      "url": "https://www.amazon.com/dp/B09X3WGJ3R",
+      "name": "",
+      "price": null,
+      "priority": "love",
+      "notes": "",
+      "image": "",
+      "customImage": false,
+      "added": "2026-10-22T17:59:56.119Z",
+      "previewFetched": false
     }
   ]
 }

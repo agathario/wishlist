@@ -78,7 +78,7 @@
       "id": "mvjulpb6dl0f",
       "url": "https://www.amazon.com/dp/B08KGTKW53",
       "name": "POP Funko Marvel: WandaVision - Agatha Harkness",
-      "price": 19.0,
+      "price": 19,
       "priority": "love",
       "notes": "",
       "image": "images/mvjulpb6dl0f.jpg",
@@ -86,6 +86,18 @@
       "added": "2026-10-22T18:02:00.930Z",
       "previewFetched": true,
       "imageSource": "https://m.media-amazon.com/images/I/71CV9curM5L._AC_SL1500_.jpg"
+    },
+    {
+      "id": "mvjunsusqovt",
+      "url": "https://www.etsy.com/listing/1856855659/healing-water-incantation-sticker",
+      "name": "",
+      "price": null,
+      "priority": "love",
+      "notes": "",
+      "image": "",
+      "customImage": false,
+      "added": "2026-10-22T18:03:38.836Z",
+      "previewFetched": false
     }
   ]
 }

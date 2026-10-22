@@ -49,14 +49,15 @@
     {
       "id": "mvjuj107fe2i",
       "url": "https://www.amazon.com/dp/B09X3WGJ3R",
-      "name": "",
-      "price": null,
+      "name": "CASABREWS CM5418 Compact Espresso Machine with Milk Frothing Steam Wand",
+      "price": 118.99,
       "priority": "love",
       "notes": "",
-      "image": "",
+      "image": "images/mvjuj107fe2i.jpg",
       "customImage": false,
       "added": "2026-10-22T17:59:56.119Z",
-      "previewFetched": false
+      "previewFetched": true,
+      "imageSource": "https://m.media-amazon.com/images/I/617U+hSCJEL._AC_SL1500_.jpg"
     }
   ]
 }

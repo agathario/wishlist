@@ -3,19 +3,6 @@
   "notice": "Oh hai. I got annoyed at not being able to have a single place to put links to things.  So I made one. :)",
   "items": [
     {
-      "id": "nida-skincare",
-      "url": "https://nida.co/collections/shop/products/skincare-set-7-c",
-      "name": "NIDA Super Deal Skincare Set of 7",
-      "price": 70,
-      "priority": "love",
-      "notes": "",
-      "image": "images/nida-skincare.jpg",
-      "added": "2026-10-10T12:00:00.000Z",
-      "previewFetched": true,
-      "customImage": false,
-      "imageSource": "https://nida.co/cdn/shop/files/nidasuperdeal7_AHABHA_01_b8edf9c8-82fb-466c-9e02-e2db97690fd5.jpg?v=1791885235"
-    },
-    {
       "id": "one-eyed-cat",
       "url": "https://www.etsy.com/listing/892026131/one-eyed-cat-ornament-custom-cat",
       "name": "One Eyed Cat Ornament",

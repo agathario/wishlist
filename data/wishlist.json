@@ -58,6 +58,18 @@
       "added": "2026-10-22T17:59:56.119Z",
       "previewFetched": true,
       "imageSource": "https://m.media-amazon.com/images/I/617U+hSCJEL._AC_SL1500_.jpg"
+    },
+    {
+      "id": "mvjujs10mqil",
+      "url": "https://www.amazon.com/dp/B0GR8STFC2",
+      "name": "",
+      "price": null,
+      "priority": "love",
+      "notes": "",
+      "image": "",
+      "customImage": false,
+      "added": "2026-10-22T18:00:31.140Z",
+      "previewFetched": false
     }
   ]
 }

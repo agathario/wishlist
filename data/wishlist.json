@@ -103,14 +103,15 @@
     {
       "id": "mvjuvy10rm4h",
       "url": "https://www.redbubble.com/i/sticker/Agathario-two-cards-collide-by-Jordand23/166190400/7sgk",
-      "name": "",
-      "price": null,
+      "name": "\"Agathario",
+      "price": 3.17,
       "priority": "love",
       "notes": "small, holographic",
-      "image": "",
+      "image": "images/mvjuvy10rm4h.webp",
       "customImage": false,
       "added": "2026-10-22T18:09:58.788Z",
-      "previewFetched": false
+      "previewFetched": true,
+      "imageSource": "https://ih1.redbubble.net/image.5695519827.0400/st,small,507x507-pad,600x600,f8f8f8.webp"
     }
   ]
 }

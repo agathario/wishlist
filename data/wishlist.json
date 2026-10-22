@@ -4,14 +4,15 @@
   "items": [
     {
       "id": "nida-skincare",
-      "url": "https://nida.co/collections/shop/products/skincare-set-10-us",
-      "name": "NIDA Mega Deal Skincare Set of 10 (US)",
-      "price": 100,
+      "url": "https://nida.co/collections/shop/products/skincare-set-7-c",
+      "name": "",
+      "price": null,
       "priority": "love",
       "notes": "",
-      "image": "images/nida-skincare.jpg",
+      "image": "",
       "added": "2026-10-10T12:00:00.000Z",
-      "previewFetched": true
+      "previewFetched": false,
+      "customImage": false
     },
     {
       "id": "one-eyed-cat",

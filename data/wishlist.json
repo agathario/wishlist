@@ -6,7 +6,7 @@
       "id": "nida-skincare",
       "url": "https://nida.co/collections/shop/products/skincare-set-7-c",
       "name": "NIDA Super Deal Skincare Set of 7",
-      "price": 70.0,
+      "price": 70,
       "priority": "love",
       "notes": "",
       "image": "images/nida-skincare.jpg",
@@ -73,6 +73,18 @@
       "added": "2026-10-22T18:00:31.140Z",
       "previewFetched": true,
       "imageSource": "https://m.media-amazon.com/images/I/71rQmBLqW-L._AC_SL1500_.jpg"
+    },
+    {
+      "id": "mvjulpb6dl0f",
+      "url": "https://www.amazon.com/dp/B08KGTKW53",
+      "name": "",
+      "price": null,
+      "priority": "love",
+      "notes": "",
+      "image": "",
+      "customImage": false,
+      "added": "2026-10-22T18:02:00.930Z",
+      "previewFetched": false
     }
   ]
 }
